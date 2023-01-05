@@ -10,9 +10,18 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
-nav {
-    background-color:#EAEAEA ;
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
 
+nav {
+    background-color:#FFF ;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .is-flex-nav {
@@ -27,8 +36,14 @@ nav {
 
 .logo {
     background-color: #FFF;
-    padding: 1rem;
+    padding: 0;
     margin-left: 1rem;
+
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
 }
 
 .nav-right {
@@ -53,6 +68,11 @@ nav {
     color: black;
 }
 
+.navbar-item:hover { 
+    background-color: #CCCCCC;
+    color:#3A3A3A;
+}
+
 .container {
     width: 100%;
     max-width: 960px;
@@ -62,14 +82,15 @@ nav {
 
 /* header */
 header {
-    background-color: #C4C4C4;
+    background-color: #FFF;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 5rem 1rem;
-    margin: .5rem 0px;
+    margin: 3rem 0px 1rem;
+    l
 }
 
 .is-centered {
@@ -84,7 +105,8 @@ header h1 {
 
 #duck {
 
-    background-color: #C4C4C4;
+    background: rgb(117,140,163);
+    background: linear-gradient(90deg, rgba(117,140,163,1) 0%, rgba(117,140,163,0.565945996978852) 100%);
 }
 
 .columns   {
@@ -111,7 +133,7 @@ header h1 {
 }
 
 #emergency {
-    background-color: #C4C4C4;
+    background-color: #FFF;
     padding: 3rem 0px;
     margin: .5rem 0px;
 }
@@ -131,9 +153,29 @@ header h1 {
     height: 200px;
 }
 
+.is-white { color: white;}
+
 footer {
     padding: 3rem 0px;
-    background-color: #C4C4C4;
+    background-image: url(https://www.wallpapers13.com/wp-content/uploads/2016/02/Background-lake-sky-reflecting-hd-wallpaper-15903.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+footer .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+footer .container {
+    z-index: 2;
+    position: relative;
 }
 
 form {
@@ -146,4 +188,21 @@ input, textarea {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
+    padding: .5rem;
+    border: 1px solid #F1F1F1;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+}
+
+.button {
+    padding: .5rem 1rem;
+    border: 0px;
+    background-color: #FFF;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+}
+
+.small-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
 }
