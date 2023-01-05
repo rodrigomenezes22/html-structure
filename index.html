@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Structure   </title>
+</head>
+<body>
+    <!-- Navigation -->
+
+    <nav>
+        <div class="container is-flex-nav">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/github-svgrepo-com.svg" alt="Logo">
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="navbar-item"><a href="#">Home</a></li>
+                    <li class="navbar-item"><a href="#duck">Talk to the Duck</a></li>
+                    <li class="navbar-item"><a href="#emergency">Emergency Kit</a></li>
+                    <li class="navbar-item"><a href="#contact">Contact</a></li>                
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heder -->
+    <header>
+        <div class="container">
+            <h1 class="is-centered">< Hello World /></h1>
+            <p class="is-centered">..and hello you! This is your first ever coding project. At the end of
+                    this workshop you will have created your first little blog! In the
+                    process you will get to know a few concepts and ressources, that will
+                    help you along your coding Boot Camp. Feel free to fill this page with
+                    your own text, add your personal style to it and make it yours!</p>
+        </div>
+    </header>
+    <!-- Duck Section -->
+    <section id="duck">
+        <div class="container">
+            <div class="columns">
+                <div class="text">
+                    <h2 class="is-white">Your new best friend</h2>
+                    <p class="is-white">
+                        Your text here...
+                    </p>
+                </div>
+                <div class="duck">
+                    <a href="#"
+                        ><img
+                            src="https://th.bing.com/th/id/R.9550b4c5a5b9faf662513a0dd57ae876?rik=oDg5RmXgLFnXWQ&pid=ImgRaw&r=0"
+                            alt="rubberduck"
+                            width="60%"
+                    /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Emergency -->
+    <section id="emergency">
+        <div class="container">
+        <h2 class="is-centered">In case of emergency click on:</h2>
+            <div class="grid-container">
+                <a href="https://discordapp.com/channels/641221910146842644/641593560394760200">
+                    <div class="grid-item">
+                        <img src="images/discord-svgrepo-com.svg" width="80" alt="Discord">
+                    </div>
+                </a>
+                <a href="https://stackoverflow.com/">
+                    <img src="images/stack-overflow-svgrepo-com.svg" width="80" alt="Stack Overflow">
+                </a>
+                <a href="https://developer.mozilla.org">
+                    <img src="images/mdn-svgrepo-com.svg" width="80" alt="MDN">
+                </a>
+                <a href="https://www.w3schools.com/">
+                    <img src="images/W3Schools_logo.svg.png" width="80" alt="MDN">
+                </a>
+                <a href="https://medium.com/">
+                    <img src="images/medium-svgrepo-com.svg" width="80" alt="MDN">
+                </a>
+                <a href="https://www.codenewbie.org/podcast">
+                    <img src="images/podcast-solid-svgrepo-com.svg" width="80" alt="MDN">
+                </a>
+            </div>   
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2 class="is-centered is-white">Contact us</h2>
+            <form>
+            <input type="text" placeholder="Type your name"/>
+            <textarea cols="30" rows="10" placeholder="Your message."></textarea>
+            <button class="button">Submit</button>
+            </form><br><br>
+            <p class="is-centered is-white">
+                Proudly created by <br><br>
+                <img src="https://media.licdn.com/dms/image/C4D03AQG-i0p4ad_C9A/profile-displayphoto-shrink_800_800/0/1595241650143?e=1678320000&v=beta&t=BKKKXf0SwLkppKpn1TxR0toDv_PlXsVVHrffhmYK8yA" class="small-pic" alt="">
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
